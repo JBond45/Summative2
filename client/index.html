@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="styleSheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="banner" id="banner">
+        <img src="logo.jpg" alt = "White scout logo, (A simplified fleur de lis)">
+        <h1 >Durham City Scouts</h1>
+        <button onclick = "AdminSwitch()">Admin</button>
+    </div>
+    <div id="mainSec">
+        <label for="groupS">Pick Group:</label>
+        <select name="groupS" id="selectG"></select>
+        <button onClick="LoadG()">Go!</button> 
+        <p id = "topText">Come and meet our lovely voulenteers!</p>
+        <img src="general.png" class = "logoImg">
+        <div id="general"></div>
+        <img src="beaver.jpg" class = "logoImg">
+        <div id="beaver"></div>
+        <img src="cubs.jpg" class = "logoImg">
+        <div id="cubs"></div>
+        <img src="scoutName.jpg" class = "logoImg">
+        <div id="scouts"></div>
+        <img src = "explorer.jpg" class = "logoImg">
+        <div id="explorers"></div>
+        
+    </div>
+    <div id = "admin" class = "hidden">
+    <p>New Voulenteer form</p>
+    <div class="form-group">
+      
+      <label for="groupSel">select group:</label>
+      <select class="form-control" id="groupSel">
+      </select>
+      <label for="nameIn">Name:</label>
+      <input class="form-control" type="text" placeholder="Full name" id="nameIn">
+      <label for="secSel">Select Sectio</label>
+      <select class="form-control" id="secSel">
+        <option value="general">General</option>
+        <option value="beaver">Beavers</option>
+        <option value="cubs">Cubs</option>
+        <option value="scouts">Scouts</option>
+        <option value="explorers">Explorers</option>
+      </select>
+      <label for="role">Role:</label>
+      <input class="form-control" type="text" id="role">
+      <label for="imgFile" class="form-label">upload photo</label>
+      <input class="form-control" type="file"  id="imgFile" accept=".jpg,.png">
+      <button onclick="submitLForm()" class="btn btn-primary">Submit</button>
+    
+      
+    </div>
+
+  </form>
+  <p>New group</p>
+  <form class="form-group">
+    <label for="role">Group name:</label>
+    
+      <input class="form-control" type="text" id="GName">
+      <button  class="btn btn-primary" id="gFormBut">Submit</button>
+  </form>
+</div>
+<div id="errorImg" class="hidden">
+  <img src="errorImg.png" alt="Beaver mascot in water" id="erImg">
+</div>
+
+
+
+    <script src="clientCode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

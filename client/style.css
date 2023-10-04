@@ -1,0 +1,26 @@
+.banner{background-color: #7413dc;
+    color:white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position:sticky;
+    top: 0;
+    }
+.hidden{display : none;}
+.logoImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.logoName{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+}
+div{display: block;}
+#erImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
